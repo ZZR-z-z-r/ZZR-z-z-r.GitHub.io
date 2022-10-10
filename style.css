@@ -1,0 +1,404 @@
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0%;
+}
+.top {
+    height: 48px;
+    background-color:rgb(51,51,51);
+}
+.top-container {
+    width:1080px;
+    height:48px;
+    margin: auto;
+}
+.top-container div {
+    float: right;
+    line-height: 48px;
+    margin-left: 10px;
+}
+.top-container span {
+    float: right;
+    color:rgb(231,231,231);
+    font-weight: 200;
+    line-height: 48px;
+    margin-left: 10px;
+}
+.top-container div a {
+    text-decoration: none;
+    color:rgb(231,231,231);
+}
+
+.search {
+    position: relative;
+    width:1080px;
+    height:51px;
+    margin: auto; 
+    margin-top: 20px;
+}
+/* .frame {
+    position:absolute;
+    right:76px;
+    bottom:-10px;
+    width:236px;
+    height:42px;
+}
+.frame input {
+    width:236px;
+} */
+.logo {
+    float:left;
+    line-height:51px;
+}
+.search .logo a {
+    color:rgb(182,134,57);
+    font-size:40px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "仿宋";
+    margin-right: 100px;
+}
+.search a {
+    float:left;
+    line-height: 51px;
+    color:rgb(102, 102, 102);
+    font-size:18px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.banner {
+    width:1080px;
+    height:358px;
+    margin: auto;
+    margin-top: 3px;
+}
+.banner-left{
+    float: left;
+    width:221px;
+    height:358px;
+    background-color:rgb(159,128,82);
+}
+.banner-left li {
+    display: block;
+    width: 221px;
+    height:60px;
+    color: white;
+}
+.banner-right{
+    float: left;
+    width:859px;
+    height:358px;
+    background-image: url(https://res.youpin.mi-img.com/youpinoper/dce715a5_2cd7_41fd_a496_5b592df0f528.png?w=1080&h=450);
+    background-size: 100%;
+}
+.warp {
+    width:1080px;
+    height:153px;
+    margin: auto;
+    margin-top: 35px;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-color:rgb(231,231,231) ;
+}
+.warp .kingkong {
+    width:116px;
+    height:139.2px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 110px;
+}
+.warp .kingkong-1 {
+    width:116px;
+    height:139.2px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.warp a {
+    text-decoration: none;
+    text-align: center;
+}
+.k-image1 {
+    width:116px;
+    height:116px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/ferriswheel/aa807bb8_acab_41ff_b419_2e391bb26622.png?w=180&h=180);
+}
+.k-image2 {
+    width:116px;
+    height:116px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/ferriswheel/599756a6_037d_46dc_b6f8_b5ced6879da1.png?w=180&h=180);
+}
+.k-image3 {
+    width:116px;
+    height:116px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/ferriswheel/7b76188c_f8fc_41d5_9845_92303f06006d.png?w=180&h=180);
+}
+.k-image4 {
+    width:116px;
+    height:116px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/ferriswheel/d5bd4a63_0270_4c22_b1a2_2c5f177d6440.png?w=180&h=180);
+}
+.k-image5 {
+    width:116px;
+    height:116px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/ferriswheel/7dc948e7_8591_4478_9920_eae0ff3a209a.png?w=180&h=180);
+}
+.k-text {
+    width:116px;
+    height:23.2px;
+    line-height: 23.2px;
+    color: black;
+}
+.zhongchou {
+    width:1080px;
+    height:305.8px;
+    margin: auto;
+    margin-top:40px;
+}
+.zhongchou-top {
+    width:1080px;
+    height:36.8px;
+    margin: auto;
+    margin-bottom:20px;
+    background-color: white;
+}
+.zhongchou-top div {
+    float: left;
+    height:36.8px;
+    font-weight: 500;
+    font-size: 28px;
+}
+.zhongchou-top span {
+    height:36.8px;
+    margin-left: 12px;
+    font-size: 14px;
+    color:rgb(132, 132, 132);
+}
+.more a{
+    text-decoration: none;
+    color:rgb(132, 132, 132);
+    font-size: 14px;
+}
+.zhongchou-top .more {
+    height:36.8px;
+    float: right;
+}
+.zhongchou .goods1 {
+    position: relative;
+    width:537px;
+    height:245px;
+    float: left;
+    margin-right: 6px;
+    background-color: rgb(249,243,233);
+
+}
+.zhongchou .goods2 {
+    position: relative;
+    width:537px;
+    height:245px;
+    float: left;
+    background-color: rgb(248,248,248);
+}
+.pro-text {
+    width:514px;
+    height:121px;
+    margin-top: 23px;
+    margin-left: 23px;
+}
+.pro-info {
+    color:black;
+    line-height: 24px;
+    height: 24px;
+    font-size: 20px;
+}
+.pro-desc {
+    font-size: 16px;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 8px;
+    color: #999;
+}
+.pro-price {
+    line-height: 28px;
+    height: 28px;
+    color: #a92112;
+    margin-top: 16px;
+    font-size: 24px;
+}
+.pro-img {
+    position: absolute;
+    width: 215px;
+    height:215px;
+    right: 15px;
+    top:-10px;
+}
+.tag {
+    font-size: 15px;
+    margin-right: 7px;
+}
+.flag {
+    font-size: 12px;
+}
+.progress {
+    position: absolute;
+    width:537px;
+    height:22px;
+    margin-top: 12px;
+    background-color:white;
+    bottom: 0px;
+}
+.support {
+    margin-left: 20px;
+}
+.sup-num {
+    margin-right: 6px;
+    color: #a92112;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.text {
+    color: #999;
+    font-size: 15px;
+}
+.num {
+    height:20.8px;
+    float: right;
+    color: #a92112;
+    font-size: 18px;
+}
+.num-flag {
+    margin-top:6px ;
+    margin-right: 10px;
+    margin-left: 3px;
+    float: right;
+    color: #a92112;
+    font-size: 12px
+}
+.miaosha {
+    width:1080px;
+    height:390.8px;
+    margin: auto;
+    margin-top:40px;
+}
+.timer {
+    width:84px;
+    height:18px;
+    background-color:white;
+    margin-left: 12px;
+}
+.timer span {
+    font-size: 18px;
+    color: #a92112;
+} 
+.swiper {
+    width:1080px;
+    height:354px;
+}
+.slide {
+    float: left;
+    width:266.25px;
+    height:354px;
+    margin-right: 5px;
+    background-color: #faf6ef;
+}
+.slide-1 {
+    float: left;
+    width:266.25px;
+    height:354px;
+    background-color: #faf6ef;
+}
+.s-image1 {
+    width:266px;
+    height:266px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/shopmain/03d8bcb91033e57457e45742fb5a008d.jpg);
+}
+.s-image2 {
+    width:266px;
+    height:266px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/shopmain/f4df434c614657fb96ba1f054a4244e9.jpg);
+}
+.s-image3 {
+    width:266px;
+    height:266px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/shopmain/1b4c9d1075772c868872a3f357a3a84b.jpg);
+}
+.s-image4 {
+    width:266px;
+    height:266px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/shopmain/b21108ad3db2da8ad1037a401133f0b8.jpg);
+}
+.swiper .pro-info {
+    width:266px;
+    height:23px;
+    text-align: center;
+    margin-top: 10px;
+}
+.swiper .pro-price {
+    width:266px;
+    height:23px;
+    text-align: center;
+    margin-top: 10px;
+}
+.swiper .pro-price .pre {
+    font-size: 16px;
+    color: #000;
+    text-decoration: line-through;
+}
+.meiri {
+    width:1080px;
+    height:400.8px;
+    margin: auto;
+    margin-top:40px;
+}
+.meiri .swiper {
+    height:374px;
+}
+.meiri .slide {
+    height:374px;
+    background-color: white;
+    
+}
+.meiri .slide-1 {
+    height:374px;
+    background-color: white;
+}
+.meiri .pro-desc {
+    font-size: 14px;
+    color:rgb(100,100,100);
+    text-align: center;
+}
+.m-image1 {
+    width:266px;
+    height:266px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/shop-fe/ad77d90f_9a52_450d_81e9_8342150ada06.jpeg);
+}
+.m-image2 {
+    width:266px;
+    height:266px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/youpin_gms/9262f482_40da_4a6a_9f4d_e488564d6ae6.jpeg?w=800&h=800);
+}
+.m-image3 {
+    width:266px;
+    height:266px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/shopmain/04a7016b43be79ef936cf4874fcea226.jpg);
+}
+.m-image4 {
+    width:266px;
+    height:266px;
+    background-size: 100%;
+    background-image: url(https://img.youpin.mi-img.com/shop-fe/4695695f_3ee4_4719_9e3e_5bc511c955b7.jpeg);
+}

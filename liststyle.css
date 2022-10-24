@@ -11,6 +11,10 @@ input {
 .main {
     background-color:rgb(245,245,245);
 }
+.bottom {
+    height:90px;
+    margin-top: 30px;
+}
 .page-top {
     height: 48px; 
     background-color:rgb(51,51,51); 
@@ -37,7 +41,7 @@ input {
     color:white;
 }
 .guide {
-    height:51px;
+    height:56px;
     margin-top: 20px;
     background-color:rgb(245,245,245);
     position: sticky;
@@ -51,7 +55,7 @@ input {
     float:left;
     height:41px;
     width:123px;
-    margin: 5px 96px 5px 0px;/*上右下左 */
+    margin: 5px 96px 10px 0px;/*上右下左 */
     background-size: 100%;
     background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/youpin-pc/production/YouPin_PC/static3/media/logo.8cef1e8f.png);
 }

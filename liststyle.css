@@ -1,0 +1,212 @@
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0%;
+}
+input {
+    padding: 0px;
+    border: none;
+}
+.main {
+    background-color:rgb(245,245,245);
+}
+.page-top {
+    height: 48px; 
+    background-color:rgb(51,51,51); 
+}
+.page-top-content {
+    height: 48px;
+    width:1080px;
+    margin: auto;
+}
+.page-top-content span {
+    float: right;
+    font-weight: 200;
+    line-height: 48px;
+    margin-left: 10px;
+    color:rgb(231,231,231);
+}
+.page-top-content a {
+    float: right;
+    line-height: 48px;
+    margin-left: 10px;
+    color:rgb(231,231,231);
+}
+.page-top-content a:hover {
+    color:white;
+}
+.guide {
+    height:51px;
+    margin-top: 20px;
+    background-color:rgb(245,245,245);
+    position: sticky;
+    top:0px;
+}
+.guide-content {
+    width:1080px;
+    margin: auto; 
+}
+.logo {
+    float:left;
+    height:41px;
+    width:123px;
+    margin: 5px 96px 5px 0px;/*上右下左 */
+    background-size: 100%;
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/youpin-pc/production/YouPin_PC/static3/media/logo.8cef1e8f.png);
+}
+.guide-category {
+    float:left;
+    height:46px;
+    width:500px;
+    margin-top: 5px;
+}
+.guide-category a{
+    float: left;
+    margin-right: 24px;
+    line-height: 51px;
+    color:rgb(102, 102, 102);
+    font-size:18px;
+}
+.guide-category a:hover{
+    color:rgb(159,128,82);
+}
+.search {
+    float:right;
+    margin-top: 16px;
+    width: 340px;
+    height:30px;
+    border-bottom:1px solid rgb(212, 212, 212);
+}
+.search-button {
+    float :left;
+    width: 30px;
+    height:30px;
+    cursor: pointer;
+}
+.search-button:hover {
+    border-bottom:1.8px solid rgb(159,128,82);
+}
+.search-text
+{
+    float :left;
+    width: 310px ;
+    color:rgb(96,96,96);
+    outline: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+.search-text:focus {
+    border-bottom:1.8px solid rgb(159,128,82);
+}
+input::-webkit-input-placeholder {
+    color: rgb(182, 182, 182)
+}
+.classify {
+    margin-top: 8px;
+    height: 80px;
+    background-color: white;
+}
+.classify-content {
+    width:1080px;
+    margin: auto;
+}
+.classify-content span {
+    float:left;
+    line-height: 80px;
+    font-size: 16px;
+    color:rgb(182, 182, 182);
+    margin-right: 20px;
+}
+.class-name {
+    float:left;
+    height:80px;
+}
+.class-name a {
+    margin-left: 96px;
+    font-size: 16px;
+    line-height: 80px;
+    color: rgb(96,96,96);
+}
+.class-name a:hover {
+    color:rgb(159,128,82);
+}
+.detail {
+    width:1080px;
+    height:1818px;
+    display:flex;
+    margin: auto;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap:12px;
+}
+.item {
+    height:354px;
+    width:261px;
+    background-color:white;
+}
+.item:hover {
+    box-shadow: 0px 5px 10px 3px rgb(212, 212, 212)
+}
+.title {
+    color:black;
+    line-height: 24px;
+    height: 24px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 12px;
+}
+.feature{
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 12px;
+    color: #999;
+    text-align: center;
+}
+.price {
+    height: 28px;
+    margin-top: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.current-price {
+    font-size: 22px;
+    color: #a92112;
+}
+.original-price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+.image {
+    width:261px;
+    height:232px;
+    text-align: center;
+}
+.image img {
+    width: 232px;
+    height: 232px;
+}
+.page-choose {
+    margin-top: 24px;
+    height:50px;
+}
+.page-content {
+    margin: auto;
+    width:400px;
+    line-height: 50px;
+}
+.page-content a {
+    float:left;
+    width:60px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(96,96,96);
+}
+.page-content a:hover {
+    background-color:rgb(159,128,82); 
+    color:rgb(231,231,231);
+}

@@ -147,6 +147,7 @@ input::-webkit-input-placeholder {
 .pricebox {
     margin-top: 10px;
     height:42px;
+    line-height: 42px;
     padding-top: 12px;
     background-color: rgb(245,245,245);
 }
@@ -169,7 +170,7 @@ input::-webkit-input-placeholder {
 .servicebox {
     background-color: rgb(245,245,245);
     padding-top: 10px;
-    padding-bottom:16px;
+    padding-bottom:12px;
 }
 .h-service {
     float: left;
@@ -183,9 +184,9 @@ input::-webkit-input-placeholder {
     width:484px;
 }
 .service {
+    display: inline-block;
     font-size:16px;
-    height: 20px;
-    line-height: 20px;
+    height: 36px;
     color: rgb(96,96,96);
     margin-right: 12px;
 }
@@ -194,8 +195,8 @@ input::-webkit-input-placeholder {
     height:20px;
     vertical-align: bottom;
 }
-.type{
-    margin-top: 6px;
+.type {
+    line-height: 34px;
     font-size: 14px;
     color:rgb(51,51,51);
     margin-right: 40px;
@@ -210,7 +211,7 @@ input::-webkit-input-placeholder {
     font-size: 16px;
     float: left;
     width: 90px;
-    line-height:30px;
+    line-height:32px;
     text-align: center;
     border:1px solid rgb(212, 212, 212);
     margin-right: 12px;
@@ -228,34 +229,37 @@ input::-webkit-input-placeholder {
     font-size: 16px;
     float: left;
     width: 80px;
-    line-height:30px;
+    line-height:32px;
     text-align: center;
     border:1px solid rgb(212, 212, 212);
     margin-right: 12px;
 }
 .colour a:focus {
-    border:1.5px solid rgb(159,128,82);
+    border:1px solid rgb(159,128,82);
     color:rgb(159,128,82);
 }
 .num {
-    height:48px;
+    height:34px;
     margin-top: 36px;
 }
 .plus-minus {
     color:rgb(159,128,82);
     font-size: 28px;
     font-weight: 200;
-    text-align: 30px;
+    line-height: 28px;
+    height:32px;
     float: left;
-    width: 42px;
+    width: 32px;
     text-align: center;
     border:1px solid rgb(212, 212, 212);
 }
 .num input{
     float: left;
-    width: 37.9px;
-    height:37.9px;
-    border:1px solid rgb(212, 212, 212);
+    width: 64px;
+    height: 32px;
+    outline: none;
+    border-top:1px solid rgb(212, 212, 212);
+    border-bottom:1px solid rgb(212, 212, 212);
     text-align: center;
 }
 .buy {
@@ -263,7 +267,7 @@ input::-webkit-input-placeholder {
     margin-top: 24px;
 }
 .buy a {
-    float: left;
+    display: inline-block;
     width:160px;
     margin-right: 48px;
     line-height: 60px;
@@ -271,7 +275,7 @@ input::-webkit-input-placeholder {
     text-align: center;
 }
 .later {
-    border:1.5px solid rgb(159,128,82);
+    border:1px solid rgb(159,128,82);
     background-color:rgb(159,128,82);
     color:white;
 } 

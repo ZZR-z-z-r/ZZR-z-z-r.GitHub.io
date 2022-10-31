@@ -8,6 +8,9 @@ input {
     padding: 0px;
     border: none;
 }
+#test {
+    display: none;
+}
 .main {
     background-color:rgb(245,245,245);
 }

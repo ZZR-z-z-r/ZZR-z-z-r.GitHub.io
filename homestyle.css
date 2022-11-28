@@ -8,9 +8,6 @@ input {
     padding: 0px;
     border: none;
 }
-#test {
-    display: none;
-}
 .main {
     background-color:rgb(245,245,245);
 }
@@ -191,8 +188,8 @@ input::-webkit-input-placeholder {
 .detail {
     width:1080px;
     height:354px;
-    display:flex;
     gap:12px;
+    display:none;
 }
 .item {
     height:354px;

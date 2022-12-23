@@ -171,10 +171,6 @@ input::-webkit-input-placeholder {
     color:rgb(96, 96, 96);
     font-size: 16px;
 }
-.select:hover {
-    text-decoration: underline;
-    color:rgb(159,128,82);
-}
 .more {
     float:right;
     margin-top: 10px;
@@ -189,7 +185,7 @@ input::-webkit-input-placeholder {
     width:1080px;
     height:354px;
     gap:12px;
-    display:none;
+    display:flex;
 }
 .item {
     height:354px;

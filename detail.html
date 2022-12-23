@@ -11,12 +11,13 @@
     <div class="top">
         <div class="page-top">
             <div class="page-top-content">    
-                <a href="#">关于我们</a>
+                <a href="https://www.xiaomiyoupin.com/">参考网站</a>
+                <span>|</span>  
+                <a href="#">关于本站</a>
                 <span>|</span>
-                <a href="#">帮助中心</a>
+                <a href="#">帮助文档</a>
                 <span>|</span>
-                <a href="#">注册</a>
-                <a href="#">登陆</a>
+                <a href="#">收藏夹</a>
                 <span>|</span>
                 <a href="home.html">首页</a>
             </div>
@@ -43,7 +44,7 @@
             <div class="information">
                 <div class="titlebox">
                     <img src="https://img.youpin.mi-img.com/shopcenter/g8h854gs43o_11509666561618563505280.png" alt="">
-                    <p class="title">K50 至尊版 8GB+128GB 雅黑</p>
+                    <p class="title">K50 至尊版 <span class="sd">8GB+128GB</span> <span class="color">雅黑</span></p>
                 </div>
                 <p class="feature">新一代骁龙8+ | 定制 1.5K 屏幕 |120W神仙秒充</p>
                 <div class="pricebox">
@@ -63,27 +64,35 @@
                 </div>
                 <div class="version">
                     <span class="type">版本</span>
-                    <a href="#">8+128</a>
-                    <a href="#">8+256</a>
-                    <a href="#">12+256</a>
-                    <a href="#">12+512</a>
+                    <div class="sd-option">
+                        <a href="javascript:;">8GB+128GB</a>
+                        <a href="javascript:;">8GB+256GB</a>
+                        <a href="javascript:;">12GB+256GB</a>
+                        <a href="javascript:;">12GB+512GB</a>
+                    </div>
                 </div>
-                <div class="colour">
+                <div class="version">
                     <span class="type">颜色</span>
-                    <a href="#">雅黑</a>
-                    <a href="#">冰蓝</a>
-                    <a href="#">银迹</a>
-                    <a href="#">冠军版</a>
+                    <div class="colour-option">
+                        <a href="javascript:;">雅黑</a>
+                        <a href="javascript:;">冰蓝</a>
+                        <a href="javascript:;">银迹</a>
+                        <a href="javascript:;">冠军版</a>
+                    </div>
                 </div>
-                <div class="num">
+                <div class="num">                                                                                             
                     <span class="type">数量</span>
                     <a class="plus-minus" href="#">-</a>
                     <input type="text" value="1">
                     <a class="plus-minus" href="#">+</a>
+                    <div class="count">
+                        <span class="type">总记 :</span>
+                        <span class="total-price">¥2699</span>
+                    </div>
                 </div>
                 <div class="buy">
-                    <a href="#" class="later">加入购物车</a>
-                    <a href="#" class="now">立即购买</a>
+                    <a href="https://www.mi.com/shop/buy/detail?product_id=16326&cfrom=search" class="later">小米商城</a>
+                    <a href="https://www.xiaomiyoupin.com/detail?gid=156076&spmref=YouPinPC.$SearchFilter$1.search_list.1.82857825&last_scmv2=3001.21.1:zero-3:zero-4:zero-5:zero-6:zero-7:zero.0.0&scmv2_num=0" class="now">小米有品</a>
                 </div>
             </div>
         </div>
@@ -98,6 +107,54 @@
         </div>
 
         <div class="bottom"></div>
+
+        <script>
+            var colorop=document.querySelectorAll(".colour-option a")
+            var color=document.querySelector('.color')
+            for (var i=0;i<colorop.length;i++){
+                colorop[i].onclick=function(){
+                    for(var j=0;j<colorop.length;j++){
+                        colorop[j].style.color='rgb(51,51,51)';
+                        colorop[j].style.border='1px solid rgb(212, 212, 212)'
+                    }
+                    this.style.color='rgb(159,128,82)';
+                    this.style.border='1px solid rgb(159,128,82)';
+                    color.innerHTML=this.innerHTML;
+                }
+            }
+            var sdop=document.querySelectorAll(".sd-option a")
+            var sd=document.querySelector('.sd')
+            var currentprice=document.querySelector('.current-price')
+            var originalprice=document.querySelector('.original-price')
+            for (var i=0;i<sdop.length;i++){
+                sdop[i].onclick=function(){
+                    for(var j=0;j<sdop.length;j++){
+                        sdop[j].style.color='rgb(51,51,51)';
+                        sdop[j].style.border='1px solid rgb(212, 212, 212)'
+                    }
+                    this.style.color='rgb(159,128,82)';
+                    this.style.border='1px solid rgb(159,128,82)';
+                    sd.innerHTML=this.innerHTML;
+                    if (this.innerHTML=='8GB+128GB'){
+                        currentprice.innerHTML='¥2699';
+                        originalprice.innerHTML='¥2999';
+                    }
+                    if (this.innerHTML=='8GB+256GB'){
+                        currentprice.innerHTML='¥2999';
+                        originalprice.innerHTML='¥3299';
+                    }
+                    if (this.innerHTML=='12GB+256GB'){
+                        currentprice.innerHTML='¥3199';
+                        originalprice.innerHTML='¥3499';
+                    }
+                    if (this.innerHTML=='12GB+512GB'){
+                        currentprice.innerHTML='¥3499';
+                        originalprice.innerHTML='¥3799';
+                    }
+                }
+            }
+
+        </script>
 
     </body>
 </html>

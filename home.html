@@ -12,12 +12,13 @@
 
         <div class="page-top">
             <div class="page-top-content">     
-                <a href="#">关于我们</a>
+                <a href="https://www.xiaomiyoupin.com/">参考网站</a>
+                <span>|</span>  
+                <a href="#">关于本站</a>
                 <span>|</span>
-                <a href="#">帮助中心</a>
+                <a href="#">帮助文档</a>
                 <span>|</span>
-                <a href="#">注册</a>
-                <a href="#">登陆</a>
+                <a href="#">收藏夹</a>
                 <span>|</span>
                 <a href="home.html">首页</a>
             </div>
@@ -59,7 +60,7 @@
                 <a class="select" index="0" href="javascript:;">Xiaomi手机</a>
                 <a class="select" index="1" href="javascript:;">Redmi手机</a>
             </div>
-            <div class="detail" style="display:flex;">
+            <div class="detail" style="display:none;">
                 <a class="item" href="detail.html">
                     <div class="image"><img src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202208111200_c1016839eae2c1f5bb79d5afde498e81.png?thumb=1&w=250&h=250&f=webp&q=90" alt=""></div>
                     <p class="title">Xiaomi Buds 4 Pro</p>
@@ -120,7 +121,7 @@
                 <a class="select" index="0" href="javascript:;">手环|手表</a>
                 <a class="select" index="1" href="javascript:;">耳机</a>
             </div>
-            <div class="detail" style="display:flex;">
+            <div class="detail" style="display:none;">
                 <a class="item" href="detail.html">
                     <div class="image"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f0408c24b677c7fe8b3cc402ec062334.png?thumb=1&w=250&h=250&f=webp&q=90" alt=""></div>
                     <p class="title">Redmi G Pro游戏本</p>
@@ -181,7 +182,7 @@
                 <a class="select" index="0" href="javascript:;">平板</a>
                 <a class="select" index="1" href="javascript:;">笔记本</a>
             </div>
-            <div class="detail" style="display:flex;">
+            <div class="detail" style="display:none;">
                 <a class="item" href="detail.html">
                     <div class="image"><img src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202208111200_c1016839eae2c1f5bb79d5afde498e81.png?thumb=1&w=250&h=250&f=webp&q=90" alt=""></div>
                     <p class="title">Xiaomi Buds 4 Pro</p>
@@ -242,38 +243,56 @@
     <script>
         var phoneselect = document.querySelectorAll('#phone .select'); 
         var phonedetail = document.querySelectorAll('#phone .detail');
+        phoneselect[1].style.color='rgb(159,128,82)';
+        phoneselect[1].style.textDecoration='underline';
         console.log(phoneselect);
         for (var i=0;i<phoneselect.length;i++) {
             phoneselect[i].onmouseover=function() {
                 for(var j=0;j<phonedetail.length;j++) {
                     phonedetail[j].style.display='none';
+                    phoneselect[j].style.color='rgb(96, 96, 96)';
+                    phoneselect[j].style.textDecoration='none';
                 }
                 var index=this.getAttribute('index');
                 phonedetail[index].style.display='flex';
+                this.style.color='rgb(159,128,82)';
+                this.style.textDecoration='underline';
             }
         }
         var computerselect = document.querySelectorAll('#computer .select'); 
         var computerdetail = document.querySelectorAll('#computer .detail');
+        computerselect[1].style.color='rgb(159,128,82)';
+        computerselect[1].style.textDecoration='underline';
         console.log(computerselect);
         for (var i=0;i<computerselect.length;i++) {
             computerselect[i].onmouseover=function() {
                 for(var j=0;j<computerdetail.length;j++) {
                     computerdetail[j].style.display='none';
+                    computerselect[j].style.color='rgb(96, 96, 96)';
+                    computerselect[j].style.textDecoration='none';
                 }
                 var index=this.getAttribute('index');
                 computerdetail[index].style.display='flex';
+                this.style.color='rgb(159,128,82)';
+                this.style.textDecoration='underline';
             }
         }
         var wearselect = document.querySelectorAll('#wear .select'); 
         var weardetail = document.querySelectorAll('#wear .detail');
+        wearselect[1].style.color='rgb(159,128,82)';
+        wearselect[1].style.textDecoration='underline';
         console.log(wearselect);
         for (var i=0;i<wearselect.length;i++) {
             wearselect[i].onmouseover=function() {
                 for(var j=0;j<weardetail.length;j++) {
                     weardetail[j].style.display='none';
+                    wearselect[j].style.color='rgb(96, 96, 96)';
+                    wearselect[j].style.textDecoration='none';
                 }
                 var index=this.getAttribute('index');
                 weardetail[index].style.display='flex';
+                this.style.color='rgb(159,128,82)';
+                this.style.textDecoration='underline';
             }
         }
     </script>

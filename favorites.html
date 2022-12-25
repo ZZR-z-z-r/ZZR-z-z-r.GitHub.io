@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相关产品</title>
+    <link rel="stylesheet" href="favorites.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="page-top" id="up">
+            <div class="page-top-content">
+                <a href="https://www.xiaomiyoupin.com/">参考网站</a>
+                <span>|</span>  
+                <a href="introduce.html">关于本站</a>
+                <span>|</span>
+                <a href="favorites.html">收藏夹</a>
+                <span>|</span>
+                <a href="home.html">首页</a>
+            </div>
+        </div>
+
+        <div class="guide">
+            <div class="guide-content">
+                <a class="logo" href="home.html"></a>
+                    <div class="guide-category">
+                        <a href="listphone.html">手机</a>
+                        <a href="listwear.html">智能穿戴</a>
+                        <a href="listpc.html">笔记本|平板</a>
+                    </div>
+                <div class="search">
+                    <input class="search-button" type="image" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg95.699pic.com%2Fxsj%2F16%2F4h%2Ftj.jpg%21%2Ffw%2F700%2Fwatermark%2Furl%2FL3hzai93YXRlcl9kZXRhaWwyLnBuZw%2Falign%2Fsoutheast&refer=http%3A%2F%2Fimg95.699pic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1669136220&t=9673fe067deaf3724e37dc8637568a48" onClick="document.formName.submit()">
+                    <input class="search-text" type="text" placeholder="红米K50">
+                </div>
+            </div>
+        </div>
+
+        <div class="classify">
+            <div class="classify-content">
+                <span>当前位置 :</span>
+                <div class="class-name">
+                    <span>收藏夹</span>
+                </div>
+                <span class="mode">编辑 :</span>
+                <div class="mode-box">
+                    <a id="additem" href="javascript:">添加商品</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail">
+    
+        </div>
+
+        <div class="cover"></div>
+
+        <div class="pop-up">
+            <a href="javascript:;" class="popbutton" id="popclose">×</a>
+            <span>添加商品</span>
+            <form action="">
+                <div class="pop-picture">商品图片<input type="text" placeholder="请输入商品图片链接"></div>
+                <div class="pop-title">商品名称<input type="text"></div>
+                <div class="pop-feature">商品简介<input type="text"></div>
+                <div class="pop-tf">是否降价: 是<input type="radio" name="t-f" class="pop-t">否<input type="radio" name="t-f" class="pop-f"></div>
+                <div class="pop-price" id="poporiprice">原价<input type="text"></div>
+                <div class="pop-price" id="popcurprice">售价<input type="text"></div>
+                <div class="pop-link">详情页链接<input type="text"></div>
+            </form>
+            <a href="javascript:;" class="popbutton" id="popsure">确认</a>
+            <a href="javascript:;" class="popbutton" id="popcancle">取消</a>
+        </div>
+
+        <div class="updown">
+            <a class="up" href="#up">∧</a>
+            <a class="down" href="#down">∨</a>
+        </div>
+
+        <div class="bottom" id="down"></div>
+
+    </div>
+
+    <script>
+        var detail=document.querySelector('.detail')
+        var additem=document.querySelector('#additem')
+        var enterstring=localStorage.getItem("enter");
+        var enter=JSON.parse(enterstring);
+        if (enterstring==null){
+            var enter ={src:'https://img.youpin.mi-img.com/youpin_gms/6435d09d_47cf_4297_9a62_3468eea1ba02.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+                            title:'Xiaomi 13 Pro',
+                            feature:'莱卡专业光学镜头',
+                            currentprice:'5399元起',
+                            originalprice:'',
+                            href:'detailXiaomi13Pro.html'}
+            localStorage.setItem("enter",JSON.stringify(enter))
+            var  item=[{src:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5713971c4bb6512743dfd06023080268.png?thumb=1&w=250&h=250&f=webp&q=90',
+                        title:'Redmi Note 11T pro',
+                        feature:'天玑810|真旗舰芯',
+                        currentprice:'1569元起',
+                        originalprice:'1799元',
+                        href:'detailRedmiNote11Tpro.html'},
+                        {src:'https://img.youpin.mi-img.com/youpin_gms/c9876910_14e1_4e15_a22c_9e63526ffabc.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+                        title:'小米手环7',
+                        feature:'1.62″AMOLED 跑道屏,四大专业...',
+                        currentprice:'209元起',
+                        originalprice:'',
+                        href:'detailXiaomibands7.html'},
+                        {src:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0b271a074e087848357aa61ae665b214.jpg?thumb=1&w=250&h=250&f=webp&q=90',
+                        title:'Xiaomi Buds 3',
+                        feature:'40dB宽频主动降噪|HiFi高保真音质|...',
+                        currentprice:'299元',
+                        originalprice:'499元',
+                        href:'detailXiaomiBuds3.html'},
+                        {src:'https://img.youpin.mi-img.com/shopmain/634be0cc7ebdba6b6e355a2b41ed36e9.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800',
+                        title:'小米平板5 11英寸',
+                        feature:'12.4英寸大屏|骁龙870旗舰处理器',
+                        currentprice:'1899元起',
+                        originalprice:'1999元',
+                        href:'detailXiaomipingban5.html'},
+                        {src:'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0f8abb2bc3947c4679e3f1b2aafc28c0.jpg?thumb=1&w=250&h=250&f=webp&q=90',
+                        title:'Redmi Book Pro 15 2022',
+                        feature:'90HZ 3.2k屏|H35处理器|升级电量',
+                        currentprice:'5599元起',
+                        originalprice:'',
+                        href:'detailRedmiBookPro15.html'}]
+            localStorage.setItem("item",JSON.stringify(item))
+        }
+        var data=localStorage.getItem("item");
+        var item=JSON.parse(data);
+        function load(item){
+            for (var i=0;i<item.length;i++){
+                var newitem=document.createElement('a');
+                newitem.classList.add('item');
+                newitem.index=i;
+                var pophref=document.querySelector('.pop-link input').value;
+                newitem.href=item[i].href;
+                detail.appendChild(newitem);
+                        
+                var newclose =document.createElement('span');
+                newclose.classList.add('close');
+                newclose.innerHTML='×';
+                newitem.appendChild(newclose);
+
+                var newimage=document.createElement('div');
+                newimage.classList.add('image');
+                var newimg=document.createElement('img');
+                newimg.setAttribute("src",item[i].src);
+                newimage.appendChild(newimg);
+                newitem.appendChild(newimage);
+
+                var newtitle=document.createElement('p');
+                newtitle.classList.add('title');
+                newtitle.innerHTML=item[i].title;
+                newitem.appendChild(newtitle);
+
+                var newfeature=document.createElement('p');
+                newfeature.classList.add('feature');
+                newfeature.innerHTML=item[i].feature;
+                newitem.appendChild(newfeature);
+                        
+                var newprice=document.createElement('p');
+                newprice.classList.add('price');
+                var currentprice=document.createElement('span');
+                currentprice.classList.add('current-price');
+                currentprice.innerHTML=item[i].currentprice
+                newprice.appendChild(currentprice)
+                if (item[i].originalprice!='') {
+                    var originalprice=document.createElement('span');
+                    originalprice.classList.add('original-price');
+                    originalprice.innerHTML=item[i].originalprice;
+                    newprice.appendChild(originalprice)
+                }
+                newitem.appendChild(newprice);
+            }
+        }
+        load(item);
+        
+        detail.addEventListener('click',function(e) {
+            if(e.target.classList.contains('close')) {
+                e.preventDefault();
+                var data=localStorage.getItem("item");
+                var item=JSON.parse(data);
+                item.splice(e.target.parentNode.index,1)
+                localStorage.setItem("item",JSON.stringify(item));
+                detail.innerHTML='';
+                load(item);
+            }
+        })
+        var popup=document.querySelector('.pop-up');
+        var cover=document.querySelector('.cover');
+        additem.onclick=function() {
+            cover.style.display='block';
+            popup.style.display='block';
+            var pophref=document.querySelector('.pop-link input')
+            pophref.value=enter.href;
+            var popsrc=document.querySelector('.pop-picture input')
+            popsrc.value=enter.src;
+            var poptitle=document.querySelector('.pop-title input')
+            poptitle.value=enter.title;
+            var popfeature=document.querySelector('.pop-feature input')
+            popfeature.value=enter.feature;
+            var popcurprice=document.querySelector('#popcurprice input')
+            popcurprice.value=enter.currentprice;
+            var poporiprice=document.querySelector('#poporiprice input')
+            poporiprice.value=enter.originalprice;
+        }
+        var popbutton=document.querySelectorAll('.popbutton');
+        for(var i=0;i<popbutton.length;i++) {
+            popbutton[i].onclick=function(){
+                popup.style.display='none';
+                cover.style.display='none';
+                var text =this.textContent
+                if(text=="确认") {
+                    var newdata={src:'',title:'',feature:'',currentprice:'',originalprice:'',href:''}
+                    var data=localStorage.getItem("item");
+                    var item=JSON.parse(data);
+                    var pophref=document.querySelector('.pop-link input').value;
+                    newdata.href=pophref;
+
+                    var popsrc=document.querySelector('.pop-picture input').value;
+                    newdata.src=popsrc;
+
+                    var poptitle=document.querySelector('.pop-title input').value;
+                    newdata.title=poptitle
+
+                    var popfeature=document.querySelector('.pop-feature input').value;
+                    newdata.feature=popfeature;
+
+                    var popcurprice=document.querySelector('#popcurprice input').value;
+                    newdata.currentprice=popcurprice
+                    var popt=document.querySelector('.pop-t');
+                    if (popt.checked==true) {
+                        var poporiprice=document.querySelector('#poporiprice input').value;
+                        newdata.originalprice=poporiprice;
+                    }
+                    item.push(newdata);
+                    localStorage.setItem("item",JSON.stringify(item));
+                    detail.innerHTML='';
+                    load(item);
+                }
+            }
+        }
+        var popt=document.querySelector('.pop-t');
+        var popf=document.querySelector('.pop-f');
+        var poporiprice=document.querySelector('#poporiprice');
+        popt.onclick=function(){
+            poporiprice.style.display='block';
+        }
+        popf.onclick=function(){
+            poporiprice.style.display='none';
+        }
+    </script>
+
+</body>
+</html>

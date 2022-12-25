@@ -143,7 +143,7 @@ input::-webkit-input-placeholder {
     float: left;
     width:859px;
     height:358px;
-    background-image: url(https://res.youpin.mi-img.com/youpinoper/435db38f_160c_4e2d_bbd3_3f08ad572e93.jpeg?w=1080&h=450);
+    background-image: url(https://res.youpin.mi-img.com/youpinoper/147c355b_c602_40d3_8aeb_ef8c07afaa1f.png?w=1080&h=450);
     background-size: 100%;
 }
 .category {
@@ -236,3 +236,26 @@ input::-webkit-input-placeholder {
     width: 232px;
     height: 232px;
 }
+.updown {
+    height:160px;
+    width:80px;
+    position: fixed;
+    left:50%;
+    bottom: 20px;
+    margin-left: 540px;
+
+}
+.updown a {
+    display: block;
+    height:80px;
+    width:80px;
+    line-height: 80px;
+    text-align: center;
+    font-size:36px;
+    color:rgb(182, 182, 182);
+}
+.updown a:hover {
+    color:white;
+    background-color:rgb(182, 182, 182);
+}
+

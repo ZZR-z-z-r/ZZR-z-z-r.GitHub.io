@@ -13,7 +13,7 @@ input {
 }
 .bottom {
     height:90px;
-    margin-top: 30px;
+
 }
 .page-top {
     height: 48px; 
@@ -107,14 +107,14 @@ input::-webkit-input-placeholder {
     color: rgb(182, 182, 182)
 }
 .banner {
-    height: 590px;
+    height: 640px;
     width: 1080px;
     margin: auto;
     margin-top: 24px;
 }
 .banner img {
-    height:540px;
-    width:540px;
+    height:520px;
+    width:520px;
 }
 .information {
     float:right;
@@ -257,16 +257,6 @@ input::-webkit-input-placeholder {
     border-bottom:1px solid rgb(212, 212, 212);
     text-align: center;
 }
-.count {
-    margin-left: 80px;
-    display: inline-block;
-}
-.total-price{
-    line-height: 34px;
-    font-size: 18px;
-    color:#a92112;
-    margin-left: -32px;
-}
 .buy {
     margin-top: 32px;
 }
@@ -302,12 +292,11 @@ input::-webkit-input-placeholder {
     margin-top: 30px;
 }
 .classify {
-    height: 80px;
     background-color:rgb(245,245,245);;
     border-top:1px solid rgb(212, 212, 212);
 }
 .classify a {
-    margin-left: 96px;
+    margin-left: 120px;
     font-size: 16px;
     line-height: 80px;
     color: rgb(96,96,96);
@@ -315,6 +304,32 @@ input::-webkit-input-placeholder {
 .classify a:hover {
     color:rgb(159,128,82);
 }
+.classify a:first-child {
+    color:rgb(159,128,82);
+}
 .introduce img {
     width: 1080px;
+    display: block;
+}
+.updown {
+    height:160px;
+    width:80px;
+    position: fixed;
+    left:50%;
+    bottom: 20px;
+    margin-left: 540px;
+
+}
+.updown a {
+    display: block;
+    height:80px;
+    width:80px;
+    line-height: 80px;
+    text-align: center;
+    font-size:36px;
+    color:rgb(182, 182, 182);
+}
+.updown a:hover {
+    color:white;
+    background-color:rgb(182, 182, 182);
 }
